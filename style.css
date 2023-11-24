@@ -1,0 +1,381 @@
+.formstyle{
+    width: 360px;
+    height: 370px;
+    background-color: rgba(23, 23, 23, 0.831);
+    border: 3px solid black;
+    box-shadow: 0px 0px 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+    padding-left: 4px;
+    margin-left: 80px;
+}
+.inputbox{
+    font-size: 20px;
+    box-shadow: 0px 0px 10px black;
+    padding-top: 50px;
+    padding-left: 5px;
+    width:234.5px;
+    background-color: rgba(0, 0, 0, 0.845);
+    height: 30px;
+    outline: 0;
+    border: 1px solid white;
+    position: relative;
+    bottom: -9.5px;
+    font-weight: lighter;
+    left: -3px;
+    color: white;
+}
+.num1{
+    width: 80px;
+    height: 40px;
+    margin-left: -3px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    bottom: -11.5px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px black;
+}
+.num2{
+    width: 80px;
+    box-shadow: 0px 0px 10px black;
+    height: 40px;
+    margin-left: -3px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin-top: -5.5px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.num3{
+    width: 80px;
+    height: 40px;
+    margin-left: -3px;
+    box-shadow: 0px 0px 10px black;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    top: -17px;
+    position: relative;
+    font-size: 15px;
+}
+.num4{
+    width: 80px;
+    height: 40px;
+    margin-left: -3px;
+    box-shadow: 0px 0px 10px black;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    top: -34px;
+    font-size: 15px;
+}
+.num5{
+    width: 80px;
+    height: 40px;
+    margin-left: -3px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+    top: -51px;
+    font-size: 15px;
+}
+.num1:hover , .num2:hover , .num3:hover , .num4:hover , .num5:hover{
+    background-color: rgba(23, 23, 23, 0.831);
+    color: white;
+}
+#clear{
+    background-color: black;
+    height: 40px;
+    width: 120.5px;
+    color: white;
+    margin-left: -3px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    position: relative;
+    top: -68px;
+    box-shadow: 0px 0px 10px black;
+    font-size: 17px;
+}
+.clear-1{
+    background-color: black;
+    height: 40px;
+    width: 120.5px;
+    color: white;
+    margin-left: -3px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid white;
+    position: relative;
+    top: -68px;
+    font-size: 15px;
+}
+#clear:hover , .clear-1:hover{
+    background-color: rgba(23, 23, 23, 0.831);
+    color: white;
+}
+.main{
+    width: cover;
+    height: 100vh;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 40px inset black;
+    justify-content: center;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+::placeholder{
+    color: white;
+}
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    --primary:black;
+   }
+   input:checked + .slider::before {
+    background-color: var(--primary);
+   }
+
+   .switch input {
+    display: none;
+   }
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(23, 23, 23, 0.831);
+    border: 3px solid black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+   }
+   
+   input:checked + .slider {
+    background-color: white;
+    border: 3px solid black;
+   }
+
+   input:focus + .slider {
+    box-shadow: 0 0 1px white;
+   }
+   
+   input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(85px);
+   }
+   
+   /*------ ADDED CSS ---------*/
+   .slider:after {
+    content: 'Dark Mode';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+   }
+   
+   input:checked + .slider:after {
+    content: 'Light Mode';
+    color: black;
+   }
+
+
+
+   .toggle{
+    position: relative;
+    top: -265px;
+    left: -241.5px;
+   }
+
+#main.night{
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px inset white;
+}
+.formstyle.night{
+    background-color: white;
+    box-shadow: 0px 0px 10px white
+}
+#input.night{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0px 0px 10px white;
+    position: relative;
+    bottom: -10.7px;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    width:231.5px;
+    }
+
+#input.night::placeholder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#clear.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#clear.night:hover,#number1.night:hover,#number2.night:hover,#number3.night:hover,#number4.night:hover,#number5.night:hover
+,#number6.night:hover,#number7.night:hover,#number8.night:hover,#number9.night:hover,#number10.night:hover,#number11.night:hover
+,#number12.night:hover,#number13.night:hover,#number14.night:hover,#number15.night:hover,#number16.night1:hover{
+    background-color: #EAEAEA;
+}
+#number1.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+}
+#number2.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white
+}
+#number3.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+}
+#number4.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white
+}
+#number5.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+}
+#number6.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+}
+#number7.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white
+}
+#number8.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+}
+#number9.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+}
+#number10.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white
+}
+#number11.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+}
+#number12.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-left: 3px solid black;
+}
+#number13.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white
+}
+#number14.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+}
+#number15.night{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+#number16.night1{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px white;
+    border-right: 3px solid black;
+}
+
+

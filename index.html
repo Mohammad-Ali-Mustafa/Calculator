@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator-3d-application-icon-png.webp" rel="icon">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="main" id="main">
+    <div class="formstyle" id="formstyle12">
+        <form name="forms">
+
+
+            <input type="text" name="answer" placeholder="0" class="inputbox" id="input"> <br>
+
+            <input type="button" value="1" onclick="forms.answer.value += '1' " class="num1" id="number1">
+            <input type="button" value="2" onclick="forms.answer.value += '2' " class="num1" id="number2">
+            <input type="button" value="3" onclick="forms.answer.value += '3' " class="num1" id="number16">
+            <br><br>
+            <input type="button" value="4" onclick="forms.answer.value += '4' " class="num2" id="number3">
+            <input type="button" value="5" onclick="forms.answer.value += '5' " class="num2" id="number4">
+            <input type="button" value="6" onclick="forms.answer.value += '6' " class="num2" id="number5">
+            <br><br>
+            <input type="button" value="7" onclick="forms.answer.value += '7' " class="num3" id="number6">
+            <input type="button" value="8" onclick="forms.answer.value += '8' " class="num3" id="number7">
+            <input type="button" value="9" onclick="forms.answer.value += '9' " class="num3" id="number8">
+            <br><br>
+            <input type="button" value="0" onclick="forms.answer.value += '0' " class="num4" id="number9">
+            <input type="button" value="+" onclick="forms.answer.value += '+' " class="num4" id="number10">
+            <input type="button" value="-" onclick="forms.answer.value += '-' " class="num4" id="number11">
+            <br><br>
+            <input type="button" value="/" onclick="forms.answer.value += '/' " class="num5" id="number12">
+            <input type="button" value="*" onclick="forms.answer.value += '*' " class="num5" id="number13">
+            <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)" class="num5" id="number14">
+
+            <br><br>
+            <input type="button" value="C" onclick="forms.answer.value = '' " id="clear">
+            <input type="button" value="X" onclick="forms.answer.value =  forms.answer.value.slice(0 , -1)" class="clear-1" id="number15">
+
+
+        </form>
+    </div>
+    <div class="toggle">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider" id="btn"></span>
+          </label>
+          </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="jquery.js"></script>
+</body>
+</html>
