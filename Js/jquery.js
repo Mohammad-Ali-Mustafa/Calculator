@@ -1,19 +1,5 @@
 
 
-// $(document).ready(function(){
-//     let value1 = $(".inputbox")
-
-
-
-//     $("body").keydown(function(a){
-//         if(a.key == "1"){
-//             value1.val("1")
-//             value1 = Number(value1);
-//             // b = Number(a)
-//         }
-//     }) 
-// }) 
-
 
 
 $("#input");
